@@ -2,10 +2,7 @@ body.dark {
   background-color: #111;
   color: #eee;
 }
- img{
-  max-width: 50%;
-  height: auto;
- }
+
 /* === ESTILOS GENERALES === */
 body {
   background-color: #343536;
@@ -52,6 +49,8 @@ input.form-control {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin-top: 50px;
+    
   
 }
 
@@ -114,7 +113,7 @@ input.form-control {
 }
 
 #pagination span {
-  color: #333;
+  color: #ffffff;
 }
 
 /* === MODO OSCURO OPCIONAL === */

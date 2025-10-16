@@ -45,7 +45,7 @@ const mostrarPersonajes = () => {
             <img style="height: 200px; width: 100%; display: block; border-radius:10px;"
                  src="${character.image}" alt="${character.name}">
             <h3 class="card-title mt-2">${character.name}</h3>
-            <h5 class="card-text">Estado: ${character.status}</h5>
+            <h5 class="card-text">Status: ${character.status}</h5>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ const mostrarPersonajes = () => {
   });
 };
 
-// NEW: botones Prev/Next + numeración compacta
+// NEW: button Prev/Next + numeración compacta
 function renderPagination() {
   const { personajes, currentPage, perPage } = state;
   const totalPages = Math.max(1, Math.ceil(personajes.length / perPage));
@@ -91,7 +91,7 @@ function renderPagination() {
         <button class="page-link" data-step="1" ${nextDisabled ? 'tabindex="-1" aria-disabled="true"' : ''}>Next</button>
       </li>
     </ul>
-    <small class="text-muted">Página ${currentPage} de ${totalPages} (10 por página)</small>
+    <small class="text-muted">Page ${currentPage} of ${totalPages} </small>
   `;
 
   // handlers
